@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management System</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>ADES-GOLDAS Coupon/Currency System</h1>
+      <h2>Product Management Module</h2>
+      <div class="input-group">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" required>
+      </div>
+      <div class="input-group">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="new">Crop Item</option>
+          <option value="used">Artistic Assets</option>
+          <option value="used">Mining Assets</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" required>
+      </div>
+      <div class="input-group">
+        <label for="condition">Product Condition:</label>
+        <select id="condition">
+          <option value="new">Fresh</option>
+          <option value="used">Processed</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+      </div>
+      <div class="input-group">
+        <label for="price">Price in XAF:</label>
+        <input type="number" id="price" required>
+      </div>
+      <button onclick="addProduct()" class="button"><h3>Add Product</h3></button>
+
+      <h2>Coupon/Currency Conversion Module</h2>
+      <h1></h1>
+      <table id="productsTable">
+        <tr>
+          <th>Product Name</th>
+          <th>Product ID</th>
+          <th>Category</th>
+          <th>Location</th>
+          <th>Condition</th>
+          <th>Date</th>
+          <th>Price (XAF)</th>
+          <th>Price (GOLDA)</th>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
